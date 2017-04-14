@@ -11,25 +11,25 @@ private constructor() {
         val major = ${major}
         val minor = ${minor}
         val patch = ${patch}
-        val buildmeta = "${buildmeta}"
-        val prerelease = "${prerelease}"
+        val buildMeta = "${buildmeta}"
+        val preRelease = "${prerelease}"
 
         val version: String
             get() = ("\$major.\$minor.\$patch" + preReleaseWithPrefix() + buildMetaWithPrefix())
 
         fun preReleaseWithPrefix(prefix: String = "-"): String {
-            return if (prerelease.isNotEmpty() && prefix.isNotEmpty()) {
-                "$prefix\$prerelease"
+            return if (preRelease.isNotEmpty() && prefix.isNotEmpty()) {
+                "$prefix$preRelease"
             } else {
-                prerelease
+                preRelease
             }
         }
 
         fun buildMetaWithPrefix(prefix: String = "+"): String {
-            return if (buildmeta.isNotEmpty() && prefix.isNotEmpty()) {
-                "$prefix\$buildmeta"
+            return if (buildMeta.isNotEmpty() && prefix.isNotEmpty()) {
+                "$prefix$buildMeta"
             } else {
-                buildmeta
+                buildMeta
             }
         }
     }

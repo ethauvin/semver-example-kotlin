@@ -16,8 +16,8 @@ class Main {
             println("    Major:          ${GeneratedVersion.major}")
             println("    Minor:          ${GeneratedVersion.minor}")
             println("    Patch:          ${GeneratedVersion.patch}")
-            println("    PreRelease:     ${GeneratedVersion.preReleaseWithPrefix()}")
-            println("    BuildMetaData:  ${GeneratedVersion.buildMetaWithPrefix()}")
+            println("    PreRelease:     ${GeneratedVersion.preRelease}")
+            println("    BuildMetaData:  ${GeneratedVersion.buildMeta}")
 
             println("-----------------------------------------------------")
         }

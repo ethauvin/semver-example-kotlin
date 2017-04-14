@@ -27,5 +27,9 @@ dependencies {
     compileOnly 'org.apache.velocity:velocity:1.7'
 
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    compile "org.jetbrains.kotlin:kotlin-stdlib-js:$kotlin_version"
+}
+
+task(runJava, type: JavaExec) {
+    main 'com.example.Example'
+    classpath sourceSets.main.runtimeClasspath
 }
