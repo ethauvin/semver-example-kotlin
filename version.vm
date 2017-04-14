@@ -19,7 +19,7 @@ private constructor() {
 
         fun preReleaseWithPrefix(prefix: String = "-"): String {
             return if (prerelease.isNotEmpty() && prefix.isNotEmpty()) {
-                "\$prefix\$prerelease"
+                "$prefix\$prerelease"
             } else {
                 prerelease
             }
@@ -27,7 +27,7 @@ private constructor() {
 
         fun buildMetaWithPrefix(prefix: String = "+"): String {
             return if (buildmeta.isNotEmpty() && prefix.isNotEmpty()) {
-                "\$prefix\$buildmeta"
+                "$prefix\$buildmeta"
             } else {
                 buildmeta
             }
