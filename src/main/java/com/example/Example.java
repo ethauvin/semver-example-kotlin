@@ -8,15 +8,14 @@ public class Example {
 
         System.out.println("-- From Java ----------------------------------------");
 
-        System.out.println("  " + GeneratedVersion.Companion.getProject() + ' '
-                + GeneratedVersion.Companion.getVersion());
+        System.out.println("  " + GeneratedVersion.project + ' ' + GeneratedVersion.getVersion());
 
-        System.out.println("    Built on:       " + sdf.format(GeneratedVersion.Companion.getBuildDate()));
-        System.out.println("    Major:          " + GeneratedVersion.Companion.getMajor());
-        System.out.println("    Minor:          " + GeneratedVersion.Companion.getMinor());
-        System.out.println("    Patch:          " + GeneratedVersion.Companion.getPatch());
-        System.out.println("    PreRelease:     " + GeneratedVersion.Companion.getPreRelease());
-        System.out.println("    BuildMetaData:  " + GeneratedVersion.Companion.getBuildMeta());
+        System.out.println("    Built on:       " + sdf.format(GeneratedVersion.buildDate));
+        System.out.println("    Major:          " + GeneratedVersion.major);
+        System.out.println("    Minor:          " + GeneratedVersion.minor);
+        System.out.println("    Patch:          " + GeneratedVersion.patch);
+        System.out.println("    PreRelease:     " + GeneratedVersion.preRelease);
+        System.out.println("    BuildMetaData:  " + GeneratedVersion.buildMeta);
 
         System.out.println("-----------------------------------------------------");
     }
