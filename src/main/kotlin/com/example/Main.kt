@@ -8,6 +8,7 @@ class Main {
     companion object {
         @JvmStatic fun main(args: Array<String>) {
             val sdf = SimpleDateFormat("EEE, d MMM yyyy 'at' HH:mm:ss z")
+
             println("-----------------------------------------------------")
 
             println("  ${GeneratedVersion.project} ${GeneratedVersion.version}")

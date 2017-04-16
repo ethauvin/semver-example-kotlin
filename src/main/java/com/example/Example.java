@@ -8,7 +8,7 @@ public class Example {
 
         System.out.println("-- From Java ----------------------------------------");
 
-        System.out.println("  " + GeneratedVersion.project + ' ' + GeneratedVersion.getVersion());
+        System.out.println("  " + GeneratedVersion.project + ' ' + GeneratedVersion.version);
 
         System.out.println("    Built on:       " + sdf.format(GeneratedVersion.buildDate));
         System.out.println("    Major:          " + GeneratedVersion.major);
