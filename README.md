@@ -1,0 +1,1 @@
+[Kotlin](https://kotlinlang.org/)-based Example for the [Semantic Version Annotator](https://github.com/ethauvin/semver) Processor using [Gradle](https://gradle.org/) and [Kobalt](http://beust.com/kobalt/).
