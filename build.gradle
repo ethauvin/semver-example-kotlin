@@ -24,7 +24,7 @@ repositories {
 dependencies {
     kapt processorJar
     compileOnly processorJar
-    compileOnly 'com.github.spullara.mustache.java:compiler:0.9.4'
+    //compileOnly 'com.github.spullara.mustache.java:compiler:0.9.4'
 
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }
