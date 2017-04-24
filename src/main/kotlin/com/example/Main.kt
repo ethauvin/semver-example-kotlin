@@ -11,14 +11,14 @@ class Main {
 
             println("-----------------------------------------------------")
 
-            println("  ${GeneratedVersion.project} ${GeneratedVersion.version}")
+            println("  ${GeneratedVersion.PROJECT} ${GeneratedVersion.VERSION}")
 
-            println("    Built on:       " + sdf.format(GeneratedVersion.buildDate))
-            println("    Major:          ${GeneratedVersion.major}")
-            println("    Minor:          ${GeneratedVersion.minor}")
-            println("    Patch:          ${GeneratedVersion.patch}")
-            println("    PreRelease:     ${GeneratedVersion.preRelease}")
-            println("    BuildMetaData:  ${GeneratedVersion.buildMeta}")
+            println("    Built on:       " + sdf.format(GeneratedVersion.BUILDDATE))
+            println("    Major:          ${GeneratedVersion.MAJOR}")
+            println("    Minor:          ${GeneratedVersion.MINOR}")
+            println("    Patch:          ${GeneratedVersion.PATCH}")
+            println("    PreRelease:     ${GeneratedVersion.PRERELEASE}")
+            println("    BuildMetaData:  ${GeneratedVersion.BUILDMETA}")
 
             println("-----------------------------------------------------")
         }
