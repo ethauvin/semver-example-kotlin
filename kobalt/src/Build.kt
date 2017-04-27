@@ -4,19 +4,20 @@ import com.beust.kobalt.plugin.packaging.*
 import com.beust.kobalt.plugin.application.*
 import com.beust.kobalt.plugin.kotlin.*
 
-// ./kobaltw run
-// ./kobaltw java:run
+// ./kobaltw run runJava
 
 val bs = buildScript {
     repos(file("K:/maven/repository"))
 }
 
-val kotlin_version = "1.1.1"
+val kotlin_version = "1.1.2"
 val processorJar = "net.thauvin.erik:semver:0.9.7"
+
+// ./kobalt run runJava
 
 val p = project {
 
-    name = "semver-example-kotlin"
+    name = "example"
     group = "com.example"
     artifactId = name
     version = "0.1"
@@ -44,16 +45,9 @@ val p = project {
     application {
         mainClass = "com.example.Main"
     }
-}
-
-val java = project(p) {
-    name = "java"
-
-    kapt {
-        // needed
-    }
 
     application {
+        taskName = "runJava"
         mainClass = "com.example.Example"
     }
 }
