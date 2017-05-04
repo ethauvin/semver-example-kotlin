@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/kobalt/Build.kt.iml" filepath="$PROJECT_DIR$/kobalt/Build.kt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example.iml" filepath="$PROJECT_DIR$/example.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/example-kotlin.iml" filepath="$PROJECT_DIR$/.idea/modules/example-kotlin.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/example-kotlin_main.iml" filepath="$PROJECT_DIR$/.idea/modules/example-kotlin_main.iml" group="example-kotlin" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/example-kotlin_test.iml" filepath="$PROJECT_DIR$/.idea/modules/example-kotlin_test.iml" group="example-kotlin" />
