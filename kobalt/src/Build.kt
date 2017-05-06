@@ -7,11 +7,11 @@ import com.beust.kobalt.plugin.kotlin.*
 // ./kobaltw run runJava
 
 val bs = buildScript {
-    repos(file("K:/maven/repository"))
+    repos(localMaven())
 }
 
 val kotlin_version = "1.1.2"
-val processorJar = "net.thauvin.erik:semver:0.9.7"
+val processorJar = "net.thauvin.erik:semver:1.0.0"
 
 // ./kobalt run runJava
 
