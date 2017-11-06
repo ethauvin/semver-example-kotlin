@@ -1,8 +1,12 @@
-import com.beust.kobalt.*
-import com.beust.kobalt.plugin.apt.*
-import com.beust.kobalt.plugin.packaging.*
-import com.beust.kobalt.plugin.application.*
-import com.beust.kobalt.plugin.kotlin.*
+
+import com.beust.kobalt.buildScript
+import com.beust.kobalt.localMaven
+import com.beust.kobalt.plugin.application.application
+import com.beust.kobalt.plugin.apt.apt
+import com.beust.kobalt.plugin.apt.kapt
+import com.beust.kobalt.plugin.java.javaCompiler
+import com.beust.kobalt.plugin.packaging.assemble
+import com.beust.kobalt.project
 
 // ./kobaltw run runJava
 
@@ -10,8 +14,8 @@ val bs = buildScript {
     repos(localMaven())
 }
 
-val kotlin_version = "1.1.2"
-val processorJar = "net.thauvin.erik:semver:1.0.0"
+val kotlin_version = "1.1.51"
+val processorJar = "net.thauvin.erik:semver:1.0.1"
 
 // ./kobalt run runJava
 
@@ -29,12 +33,15 @@ val p = project {
     dependencies {
         apt(processorJar)
         compileOnly(processorJar)
-        compileOnly("org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
-                "org.jetbrains.kotlin:kotlin-stdlib-js:$kotlin_version")
+        compileOnly("org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version")
     }
 
     dependenciesTest {
         // compile("org.testng:testng:6.11")
+    }
+
+    javaCompiler {
+        args("-source", "1.8", "-target", "1.8")
     }
 
     assemble {
